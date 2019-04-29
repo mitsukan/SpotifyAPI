@@ -1,5 +1,4 @@
-require('dotenv').config()
-
+require('dotenv').config();
 /**
  * This is an example of a basic node.js script that performs
  * the Authorization Code oAuth2 flow to authenticate against
@@ -16,7 +15,7 @@ var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
 var client_id = '418e3e56c72646ddb116281a2758f15f'; // Your client id
-var client_secret = process.env.SPOTIFYAPPSECRET; // Your secret
+var client_secret = process.env.SPOTIFY_APP_SECRET; // Your secret
 var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 
 /**
